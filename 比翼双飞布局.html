@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>前端经典面试题</title>
+		<style>
+			/*清除默认样式*/
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.content div{
+				float: left;
+			}	
+			.content .mc{
+				width: 100%;
+				background: #0000FF;
+			}
+			.content .mc div{
+				margin: 0 200px;
+			}
+			.content .ml{
+				width: 200px;
+				margin-left: -100%;
+				background-color: #008000;
+			}
+			.content .mr{
+				width: 200px;
+				margin-left: -100%;
+				background-color:#232323;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="content">
+			<div class="mc">
+				<div>中</div>
+			</div>
+			<div class="ml">左</div>
+			<div class="mr">右</div>
+		</div>
+	</body>
+</html>
+
+<!--
+	双飞翼布局：
+		实现一个左中右布局，占满屏幕，左右为200宽度,中间自适应,首先加载中间.
+--->

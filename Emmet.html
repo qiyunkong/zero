@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			.list{
+				width: 1000px;
+				/* height: 300px; */
+				/* overflow: hidden; */
+				background-color: #ccc;
+				margin: 0 auto;
+				
+			}
+			.list:hover{
+				
+			}
+			
+			.list .item{
+				width: 200px;
+				height: 300px;
+				margin-left:20px;
+				float: left;
+				background-color: red;
+			}
+			.box{
+				width: 1000px;
+				height: 200px;
+				margin: 0 auto;
+				background-color: bisque;
+			}
+			.list2{
+				width: 1000px;
+				/* height: 300px; */
+				/* overflow: hidden; */
+				background-color: #ccc;
+				margin: 0 auto;
+				
+			}
+			.list2:hover{
+				
+			}
+		
+			.clearfix::after{
+				content: "";
+				display: block;
+				height: 0;
+				clear: both;
+				
+			}
+			.list2 .item{
+				width: 200px;
+				height: 300px;
+				margin-left:20px;
+				float: left;
+				background-color: red;
+			}
+		</style>
+</head>
+<body>
+		<h1><a href="https://docs.emmet.io/cheat-sheet/">官网</a></h1>
+		
+			
+    <ul class="list clearfix">
+    	<li class="item"></li>
+    	<li class="item"></li>
+    	<li class="item"></li>
+    </ul>
+		<div class="box"></div>
+		
+		<ul class="list2 clearfix">
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+		</ul>
+		
+		
+	
+	
+		
+		
+		
+		
+
+   
+</body>
+</html>
+
+<!---
+		原生：
+    Emmet 类似用css选择器形势表达html结构
+        一.属性操作符 (css选择器)
+            div.box div#box div.box.box2
+        二.结构操作符
+            1.子代 > 大于号
+                div>div
+            2.兄弟 + 加号
+                div+div     
+            3.返回上一级 ^ 
+                div>div+p^div
+            4.乘法操作符 *
+                ul>li*9
+            5.分组操作符 () 园括号
+                (header>div.content)+(footer>div.content)
+            6.定制属性操作符 [] 方括号   
+                img[src=""] 
+            7.数值计算操作符 $和*组合使用(默认1开)  $@N N从几开始
+                div.box-$*5
+            8.文本操作符 {} 花括号
+                div{我爱你第$次}*5
+            9.隐藏标签 div ul>li  table>tr>td
+                .class - 默认是div
+                ul>.item - 默认是li
+                     
+--->    
+<!--
+	自定义Emmet：
+		
+
+-->

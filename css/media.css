@@ -1,0 +1,66 @@
+/* 
+
+    响应式开发:
+
+    定义:页面根据不同宽度进行样式的修改
+    操作：首先需要加入
+        一、html文件需要加入的标签:
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        参数:
+        1.content属性值 :
+            width:可视区域的宽度，值可为数字或关键词device-width
+            height:同width
+        2.intial-scale:页面首次被显示是可视区域的缩放级别，取值1.0则页面按实际尺寸显示，无任何缩放
+        3.maximum-scale=1.0, minimum-scale=1.0;可视区域的缩放级别，
+        4.maximum-scale用户可将页面放大的程序，1.0将禁止用户放大到实际尺寸之上。
+        5.user-scalable:是否可对页面进行缩放，no 禁止缩放
+        二、css文件需要加入的样式
+        @media screen and (max-width: 1200px) {}
+
+        1.@media : 你可以针对不同的媒体类型定义不同的样式。(声明 如int)
+        2.screen : 用于电脑屏幕，平板电脑，智能手机等。
+        3.and : 
+        4.(参数:数值) : max-width是最大宽度 
+        
+
+
+*/
+
+
+
+
+/*屏幕小于1200px 会触发css*/
+@media screen and (max-width: 1200px) {
+    .header {
+        background-color:red;
+    }
+    .content{
+        width: 100%;
+    }
+    
+    
+}
+
+/*屏幕小于992px 会触发css*/
+@media screen and (max-width: 992px) {
+    .header {
+        background-color:blue;
+    }
+}
+
+/*屏幕小于768px 会触发css*/
+@media screen and (max-width: 768px) {
+    .header {
+        background-color:green;
+    }
+    .main .news .new {
+        width: 100%;
+        margin-top: 10px;
+        margin-left:0;
+    }
+}
+
+
+
+
+

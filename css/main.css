@@ -1,0 +1,56 @@
+/*header start*/
+.header{
+	background-color: #ccc;
+}
+.header .logo{
+	height: 250px;
+	/* background-color: #000000; */
+}
+/*header end*/
+
+.nav{
+	background-color: #a9a8a8;
+}
+.nav .list .list-item{
+	float: left;
+	width: 100px;
+	height: 50px;
+	transition: .5s;
+}
+.nav .list .list-item:hover{
+	background-color:#ccc;
+}
+
+
+.banner{
+ background-color: #ccc;
+} 
+.banner .banner-list{
+	height: 450px;
+}
+
+.main{
+	background-color: #fff;
+}
+.main .news{
+	padding-top:10px;
+}
+.main .news:last-child{
+	padding-bottom: 10px;
+}
+.main .news .new{
+	float: left;
+	min-width:350px;
+	height:300px;
+	background-color: #a9a8a8;
+	margin-left:3.125%;
+}
+.main .news .new .new-title{
+	height: 50px;
+	background-color: #ccc;
+}
+
+.footer{
+	height: 150px;
+	background-color: #a9a8a8;
+}

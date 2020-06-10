@@ -1,0 +1,39 @@
+/*
+	css 缩写
+		
+		属性:
+			w   --> width
+			h   --> height
+		  lh  --> line-height
+			p   --> padding
+			d   --> display
+			lis --> list-style
+			fl  --> float
+		
+		单位(默认表示px)：
+		  p 表示 %
+			e 表示 em
+			x 表示 ex
+		兼容：
+			trs
+			-css属性全称数值
+			@k -- 动画
+		语法:
+			单词的首字母数值
+		
+	宽度:w100 --> width:100px;
+	高度:h100 --> height:100px;
+	
+*/
+#box{
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	color: #ccc;	
+	width: 100px;
+	width: 100px;
+	height: 100px;
+	mb10
+	
+}
+
